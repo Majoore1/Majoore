@@ -78,13 +78,13 @@ fun Card1(onNavigateToStoryPage: () -> Unit) {
     val fontFamily = FontFamily(
         Font(googleFont = fontName, fontProvider = provider)
     )
-
+    BottomAppBarExample()
     Text(
         text = "Your Social\nManager",
         fontWeight = FontWeight.Bold,
         fontFamily = fontFamily,
-        fontSize = 19.sp,
-        color = Color.Yellow,
+        fontSize = 30.sp,
+        color = Color.DarkGray,
         textAlign = TextAlign.Center,
         letterSpacing = 2.sp,
         lineHeight = 35.sp,
@@ -93,6 +93,9 @@ fun Card1(onNavigateToStoryPage: () -> Unit) {
             .padding(horizontal = 16.dp, vertical = 24.dp) // Add margins
 
     )
+
+
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -132,6 +135,7 @@ fun Card1(onNavigateToStoryPage: () -> Unit) {
                     modifier = Modifier.padding(19.dp)
                 )
             }
+
         }
 
         Spacer(modifier = Modifier.height(20.dp))

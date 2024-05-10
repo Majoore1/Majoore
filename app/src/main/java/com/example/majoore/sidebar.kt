@@ -18,7 +18,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import kotlinx.coroutines.launch
 
@@ -219,10 +218,14 @@ fun Drawer() {
                         .offset(x = (-275).dp, y = (-679).dp)
                         .size(59.dp, 40.dp)
                 )
+
             }
+
         ) { innerPadding ->
             Column(modifier = Modifier.padding(innerPadding)) {
+
                 Navigation()
+
                 // Screen content...
             }
         }

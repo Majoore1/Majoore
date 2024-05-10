@@ -7,5 +7,5 @@ import androidx.navigation.compose.rememberNavController
 @Composable
 fun PhotoPage(onNavigateToCard4: () -> Unit){
     Text(text = "The Photo PAGE")
-    BottomAppBarExample()
+
 }
