@@ -13,6 +13,8 @@ import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -113,7 +115,7 @@ fun MainScreen() {
             RichTextEditor(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .weight(8f),
+                    .height(400.dp).offset(x=0.dp, y=-120.dp), // Set the height to 350.dp
                 state = state,
             )
         }
